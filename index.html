@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Project</title>
+	<link rel="stylesheet" type="text/css" href="css/myApp.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.min.css">
+</head>
+<body ng-app="myApp" layout="column">
+
+<md-toolbar>
+	<h1>I'm testing</h1>
+</md-toolbar>
+
+<div class="container" layout="row" flex>
+<md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
+	<md-list>
+		<md-list-item>
+			<md-button>
+				<md-icon md-svg-src="svg/01.svg" class="avatar"></md-icon>
+				Baldev Patwari
+			</md-button>
+		</md-list-item>
+
+		<md-list-item>
+			<md-button>
+				<md-icon md-svg-src="svg/03.svg" class="avatar"></md-icon>
+				Upendra Singh
+			</md-button>
+		</md-list-item>
+	</md-list>	
+</md-sidenav>
+<md-content id="content" flex>
+	<md-icon md-svg-src="svg/01.svg" class="avatar"></md-icon>
+	<h2>Baldev Patwari</h2>
+	<p>Baldev Patwari is a web developer. He likes to learn new things.</p>
+</md-content>	
+</div>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="node_modules/angular-aria/angular-aria.js"></script>
+<script type="text/javascript" src="node_modules/angular-material/angular-material.min.js"></script>
+<script type="text/javascript" src="js/Users.js"></script>
+<script type="text/javascript" src="js/UserService.js"></script>
+<script type="text/javascript" src="js/UserController.js"></script>
+<script type="text/javascript">
+	angular.module('myApp',['ngMaterial'])
+	.run(function(){
+		console.log("This is testing");
+	});
+</script>
+</body>
+</html>
